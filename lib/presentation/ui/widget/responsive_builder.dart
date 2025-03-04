@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:study_home/presentation/utils/screen_size.dart';
+import 'package:study_home/presentation/utils/screen_size/screen_size.dart';
 
 class ResponsiveBuilder extends StatelessWidget {
   const ResponsiveBuilder({super.key, required this.mobile, required this.tablet, required this.desktop});

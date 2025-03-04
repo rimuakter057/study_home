@@ -1,0 +1,112 @@
+/*
+import 'package:flutter/material.dart';
+import 'package:study_home/presentation/utils/constants/size/sizes.dart';
+import 'package:study_home/presentation/utils/screen_size/screen_size.dart';
+
+class TextFontSize{
+
+  static double getSignHeadline(BuildContext context, {double mobile = AppSizes.md, double tablet = AppSizes.md, double desktop = AppSizes.lg}) {
+    double width = MediaQuery.of(context).size.width;  // screen width পাই
+    DeviceType deviceType = ScreenSize.getDeviceType(width);  // device type নির্ধারণ করি
+
+    switch (deviceType) {
+      case DeviceType.mobile:
+        return mobile;
+      case DeviceType.tablet:
+        return tablet;
+      case DeviceType.desktop:
+        return desktop;
+      default:
+        return mobile;
+    }
+  }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+import 'package:flutter/material.dart';
+import 'package:study_home/presentation/utils/constants/color.dart';
+import 'package:study_home/presentation/utils/constants/size/sizes.dart';
+import 'package:study_home/presentation/utils/screen_size/screen_size.dart';
+
+
+class TextStyles {
+
+  // theme color
+  static Color getTextColor(BuildContext context) {
+    if (Theme.of(context).brightness == Brightness.dark) {
+      return AppColors.white; // Dark theme text color
+    } else {
+      return AppColors.black; // Light theme text color
+    }
+  }
+
+  // Sign in title
+  static TextStyle signInTitleStyle(BuildContext context, {double mobile = AppSizes.lg, double tablet =  AppSizes.xl, double desktop = AppSizes.xl}) {
+    double width = MediaQuery.of(context).size.width;  // screen width পাই
+    DeviceType deviceType = ScreenSize.getDeviceType(width);  // device type নির্ধারণ করি
+
+    Color textColor = getTextColor(context);
+
+    switch (deviceType) {
+      case DeviceType.mobile:
+        return TextStyle(
+          fontSize: mobile,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+        );
+      case DeviceType.tablet:
+        return TextStyle(
+          fontSize: tablet,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+        );
+      case DeviceType.desktop:
+        return TextStyle(
+          fontSize: desktop,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+        );
+      }
+  }
+
+  // sign in sub title
+  static TextStyle signInSubTitleStyle(BuildContext context, {double mobile = AppSizes.md, double tablet = AppSizes.lg, double desktop = AppSizes.lg}) {
+    double width = MediaQuery.of(context).size.width;  // screen width পাই
+    DeviceType deviceType = ScreenSize.getDeviceType(width);  // device type নির্ধারণ করি
+    Color textColor = getTextColor(context);
+    switch (deviceType) {
+      case DeviceType.mobile:
+        return TextStyle(
+          fontSize: mobile,
+          fontWeight: FontWeight.w400,
+          color: textColor,
+        );
+      case DeviceType.tablet:
+        return TextStyle(
+          fontSize: tablet,
+          fontWeight: FontWeight.w400,
+          color: textColor,
+        );
+      case DeviceType.desktop:
+        return TextStyle(
+          fontSize: desktop,
+          fontWeight: FontWeight.w400,
+          color: textColor,
+        );
+    }
+  }
+//
+
+
+}
