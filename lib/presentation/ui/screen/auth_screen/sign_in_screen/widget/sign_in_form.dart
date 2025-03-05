@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:study_home/presentation/ui/screen/auth_screen/forget_password_screen/forget_password_screen.dart';
+import 'package:study_home/presentation/ui/screen/auth_screen/sign_up_screen/sign_up_screen.dart';
 import 'package:study_home/presentation/utils/constants/app_texts.dart';
 import 'package:study_home/presentation/utils/constants/color.dart';
 import 'package:study_home/presentation/utils/constants/size/sizes.dart';
@@ -44,24 +47,16 @@ class SignInForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(ForgetPassword());
+                  },
                   child:Text(AppTexts.forgetPassword,style:AppTextStyles.forgetPasswordStyle(context,color: AppColors.blue) ),
                 ),
               ],
             ),
             SizedBox(height: AppSizes.spaceBtwSections,),
             // sign in button
-            ElevatedButton(
-              onPressed: () {},
-              child: Text(AppTexts.signIn),
-            ),
-            gap,
-            //create account button
-            OutlinedButton(
-              onPressed: () {},
-              child: Text(AppTexts.createAccount),
-            ),
-            SizedBox(height: AppSizes.spaceBtwSections,),
+
 
 
           ],

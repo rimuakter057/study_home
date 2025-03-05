@@ -2,7 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:study_home/presentation/utils/constants/size/sizes.dart';
 
-class SpacingStyles {
+class AppSpacingStyles {
 
   static const EdgeInsetsGeometry paddingWithAppbarHeight  = EdgeInsets.only(
       top: AppSizes.appBarHeight,

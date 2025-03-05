@@ -2,7 +2,7 @@ class AppTexts {
   //--GLOBAL Texts
   static const String submit = "Submit";
   static const String appName = "R-Store";
-  static const String rContinue = "Continue";
+  static const String continueT = "Continue";
   static const String tSearch = "Search in Store";
 
   // --OnBoarding Texts
@@ -19,13 +19,13 @@ class AppTexts {
 
 // --Home
   static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Md.Araful islam";
+  static const String homeAppbarSubTitle = "Rimu";
 
   // TextFormalised Form Text
 
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
-  static const String email = "E-mail";
+  static const String email = "Email";
   static const String password = "Password";
   static const String newPassword = "New Password";
   static const String userName = "Username";
@@ -33,6 +33,7 @@ class AppTexts {
   static const String remember = "Remember Me";
   static const String forgetPassword = "Forget Password";
   static const String signIn = "Sign In";
+  static const String signUp = "Sign Up";
   static const String createAccount = "Create Account";
   static const String orSignInWith = "or sign in with";
   static const String onSignUpWith = "or sign up with";
@@ -40,8 +41,8 @@ class AppTexts {
   static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of use";
   static const String verificationCode = "verificationCode";
-  static const String resentEmail = "Resend Email";
-  static const String resentEmailIn = "Resend email in";
+  static const String resendEmail = "Resend Email";
+  static const String resendEmailIn = "Resend email in";
 
 //Authentication Heading Text
   static const String signInTitle = "Welcome back.";
@@ -58,7 +59,7 @@ class AppTexts {
       "Your Account Security is Our Priority! We`ve Sent You a Secure Ling To Safely";
   static const String confirmEmail = "Verify your email address";
   static const String confirmEmailSubTitle =
-      "Congratulations! Your Account Awaits: Verity Your Email to Start Shopping and Experience a world ";
+      "Congratulations! Your Account Awaits: Verify Your Email to Start Learning and Experience a world ";
   static const String emailNotReceivedMassage =
       "Did n`t get the email? Check your junk/spam or resent it";
   static const String yourAccountCreatedTitle =

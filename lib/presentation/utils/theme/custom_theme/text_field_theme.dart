@@ -39,8 +39,8 @@ class AppTextFormFieldTheme{
     errorMaxLines: 3,
     prefixIconColor: AppColors.grey,
     suffixIconColor: AppColors.grey,
-    labelStyle: const TextStyle().copyWith(fontSize: 14,color: AppColors.black), // লেবেল টেক্সট কালার
-    hintStyle: const TextStyle().copyWith(fontSize: 14,color: AppColors.black), // হিন্ট টেক্সট কালার
+    labelStyle: const TextStyle().copyWith(fontSize: 14,color: AppColors.grey), // লেবেল টেক্সট কালার
+    hintStyle: const TextStyle().copyWith(fontSize: 14,color: AppColors.grey), // হিন্ট টেক্সট কালার
     errorStyle: const TextStyle().copyWith(fontWeight: FontWeight.normal),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),

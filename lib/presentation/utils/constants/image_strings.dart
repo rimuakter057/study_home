@@ -17,8 +17,12 @@ class AppImages {
   static const String banners5 = "assets/images/banners/banner5.jpeg";
 
   //--Social Logos
-  static const String google = "assets/icons/google.png";
-  static const String facebook = "assets/icons/facebook.png";
+  static const String google="assets/icons/google.png";
+      static const String facebook="assets/icons/facebook.png";
+
+      //email verify
+
+   static const String verifyEmail = "assets/images/onboard/one.png";
 
   //--products images shoes
   static const String shoesName = "assets/images/products/shoes_name.png";

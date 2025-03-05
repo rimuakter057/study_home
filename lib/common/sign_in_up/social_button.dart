@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:study_home/presentation/utils/constants/color.dart';
+import 'package:study_home/presentation/utils/constants/image_strings.dart';
 import 'package:study_home/presentation/utils/constants/size/sizes.dart';
+import 'package:study_home/presentation/utils/helper/helper_function.dart';
 
 class SocialButton extends StatelessWidget {
   const SocialButton({
     super.key,
-    required this.dark,
+
   });
 
-  final bool dark;
 
   @override
   Widget build(BuildContext context) {
+    final dark = AppHelperFunction.isDarkMode();
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -25,7 +27,7 @@ class SocialButton extends StatelessWidget {
               icon: Image(
                   height: AppSizes.iconMd,
                   width: AppSizes.iconMd,
-                  image: AssetImage("assets/icons/google.png"))),
+                  image: AssetImage(AppImages.google))),
         ),
         SizedBox(width:AppSizes.spaceBtwItems ,),
         Container(
@@ -38,8 +40,9 @@ class SocialButton extends StatelessWidget {
               icon: Image(
                   height: AppSizes.iconMd,
                   width: AppSizes.iconMd,
-                  image: AssetImage("assets/icons/facebook.png"))),
+                  image: AssetImage(AppImages.facebook),),),
         ),
-      ],);
+      ],
+    );
   }
 }
