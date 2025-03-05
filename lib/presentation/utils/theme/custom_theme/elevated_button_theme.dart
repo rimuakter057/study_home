@@ -9,7 +9,7 @@ class AppElevatedButtonTheme{
   style: ElevatedButton.styleFrom(
   backgroundColor: Colors.blue,
     fixedSize:const Size.fromWidth(double .maxFinite),// Background color
-  foregroundColor: Colors.blue,
+  foregroundColor: Colors.white,
     disabledBackgroundColor: AppColors.grey,
     disabledForegroundColor: AppColors.grey,// Text color
     side: BorderSide(color: Colors.blue),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:study_home/presentation/utils/constants/app_texts.dart';
+import 'package:study_home/presentation/utils/constants/color.dart';
 import 'package:study_home/presentation/utils/constants/size/sizes.dart';
+import 'package:study_home/presentation/utils/constants/size/text_styles.dart';
 
 class SignInForm extends StatelessWidget {
   const SignInForm({
@@ -38,16 +40,16 @@ class SignInForm extends StatelessWidget {
                 Row(
                   children: [
                     Checkbox(value: true, onChanged: (value) {}),
-                    Text("remember me"),
+              Text(AppTexts.remember,style:AppTextStyles.forgetPasswordStyle(context) ),
                   ],
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text("forget password"),
+                  child:Text(AppTexts.forgetPassword,style:AppTextStyles.forgetPasswordStyle(context,color: AppColors.blue) ),
                 ),
               ],
             ),
-            SizedBox(height: AppSizes.spaceBtwItems),
+            SizedBox(height: AppSizes.spaceBtwSections,),
             // sign in button
             ElevatedButton(
               onPressed: () {},
@@ -60,7 +62,7 @@ class SignInForm extends StatelessWidget {
               child: Text(AppTexts.createAccount),
             ),
             SizedBox(height: AppSizes.spaceBtwSections,),
-            /// divider
+
 
           ],
         ),

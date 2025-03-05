@@ -18,7 +18,7 @@ class FormDivider extends StatelessWidget {
         Flexible(
           child: Divider(
             color: dark ? AppColors.darkGrey : AppColors.grey,
-            thickness: 0.5,
+            thickness: 0.8,
             indent: 60,
             endIndent: 5,
           ),
@@ -27,7 +27,7 @@ class FormDivider extends StatelessWidget {
         Flexible(
           child: Divider(
             color: dark ? AppColors.darkGrey : AppColors.grey,
-            thickness: 0.5,
+            thickness: 0.8,
             indent: 5,
             endIndent: 60,
           ),

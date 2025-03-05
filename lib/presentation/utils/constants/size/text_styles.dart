@@ -23,25 +23,12 @@ class TextFontSize{
 }
 */
 
-
-
-
-
-
-
-
-
-
-
-
 import 'package:flutter/material.dart';
 import 'package:study_home/presentation/utils/constants/color.dart';
 import 'package:study_home/presentation/utils/constants/size/sizes.dart';
 import 'package:study_home/presentation/utils/screen_size/screen_size.dart';
 
-
-class TextStyles {
-
+class AppTextStyles {
   // theme color
   static Color getTextColor(BuildContext context) {
     if (Theme.of(context).brightness == Brightness.dark) {
@@ -51,10 +38,17 @@ class TextStyles {
     }
   }
 
-  // Sign in title
-  static TextStyle signInTitleStyle(BuildContext context, {double mobile = AppSizes.lg, double tablet =  AppSizes.xl, double desktop = AppSizes.xl}) {
-    double width = MediaQuery.of(context).size.width;  // screen width পাই
-    DeviceType deviceType = ScreenSize.getDeviceType(width);  // device type নির্ধারণ করি
+  /// Sign in title
+  static TextStyle signInTitleStyle(
+    BuildContext context, {
+    double mobile = AppSizes.lg,
+    double tablet = AppSizes.xl,
+    double desktop = AppSizes.xl,
+  }) {
+    double width = MediaQuery.of(context).size.width; // screen width পাই
+    DeviceType deviceType = ScreenSize.getDeviceType(
+      width,
+    ); // device type নির্ধারণ করি
 
     Color textColor = getTextColor(context);
 
@@ -77,13 +71,20 @@ class TextStyles {
           fontWeight: FontWeight.bold,
           color: textColor,
         );
-      }
+    }
   }
 
-  // sign in sub title
-  static TextStyle signInSubTitleStyle(BuildContext context, {double mobile = AppSizes.md, double tablet = AppSizes.lg, double desktop = AppSizes.lg}) {
-    double width = MediaQuery.of(context).size.width;  // screen width পাই
-    DeviceType deviceType = ScreenSize.getDeviceType(width);  // device type নির্ধারণ করি
+  /// sign in sub title
+  static TextStyle signInSubTitleStyle(
+    BuildContext context, {
+    double mobile = AppSizes.md,
+    double tablet = AppSizes.lg,
+    double desktop = AppSizes.lg,
+  }) {
+    double width = MediaQuery.of(context).size.width; // screen width পাই
+    DeviceType deviceType = ScreenSize.getDeviceType(
+      width,
+    ); // device type নির্ধারণ করি
     Color textColor = getTextColor(context);
     switch (deviceType) {
       case DeviceType.mobile:
@@ -106,7 +107,78 @@ class TextStyles {
         );
     }
   }
-//
+
+  /// forget password
+  static TextStyle forgetPasswordStyle(
+    BuildContext context, {
+    double mobile = AppSizes.fontSm,
+    double tablet = AppSizes.fontSizeMd,
+    double desktop = AppSizes.fontSizeLg,
+        Color? color
+  }) {
+    double width = MediaQuery.of(context).size.width; // screen width পাই
+    DeviceType deviceType = ScreenSize.getDeviceType(width,); // device type নির্ধারণ করি
+    Color textColor = color ?? getTextColor(context);
+    switch (deviceType) {
+      case DeviceType.mobile:
+        return TextStyle(
+          fontSize: mobile,
+          fontWeight: FontWeight.w400,
+          color: textColor,
+        );
+      case DeviceType.tablet:
+        return TextStyle(
+          fontSize: tablet,
+          fontWeight: FontWeight.w400,
+          color: textColor,
+        );
+      case DeviceType.desktop:
+        return TextStyle(
+          fontSize: desktop,
+          fontWeight: FontWeight.w400,
+          color: textColor,
+        );
+    }
+  }
+  ///sign up title
+
+  /// Sign in title
+  static TextStyle signUpTitleStyle(
+      BuildContext context, {
+        double mobile = AppSizes.lg,
+        double tablet = AppSizes.xl,
+        double desktop = AppSizes.xl,
+      }) {
+    double width = MediaQuery.of(context).size.width; // screen width পাই
+    DeviceType deviceType = ScreenSize.getDeviceType(
+      width,
+    ); // device type নির্ধারণ করি
+
+    Color textColor = getTextColor(context);
+
+    switch (deviceType) {
+      case DeviceType.mobile:
+        return TextStyle(
+          fontSize: mobile,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+        );
+      case DeviceType.tablet:
+        return TextStyle(
+          fontSize: tablet,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+        );
+      case DeviceType.desktop:
+        return TextStyle(
+          fontSize: desktop,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+        );
+    }
+  }
+
+
 
 
 }
