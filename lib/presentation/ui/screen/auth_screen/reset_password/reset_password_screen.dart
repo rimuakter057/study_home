@@ -39,7 +39,7 @@ class ResetPasswordScreen extends StatelessWidget {
               ///title and subtitle
               Text(
                 textAlign: TextAlign.center,
-                AppTexts.changeYourPasswordTitle,style: AppTextStyles.verifyEmailTitleStyle(context),),
+                AppTexts.changeYourPasswordTitle,style: AppTextStyles.titleStyle(context),),
               SizedBox(height: AppSizes.spaceBtwItems,),
 
               Text(

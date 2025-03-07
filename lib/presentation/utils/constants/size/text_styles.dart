@@ -39,7 +39,7 @@ class AppTextStyles {
   }
 
   /// Sign in title
-  static TextStyle signInTitleStyle(
+  static TextStyle titleStyle(
     BuildContext context, {
     double mobile = AppSizes.lg,
     double tablet = AppSizes.xl,
@@ -75,7 +75,7 @@ class AppTextStyles {
   }
 
   /// sign in sub title
-  static TextStyle signInSubTitleStyle(
+  static TextStyle subTitleStyle(
     BuildContext context, {
     double mobile = AppSizes.md,
     double tablet = AppSizes.lg,
@@ -140,9 +140,45 @@ class AppTextStyles {
         );
     }
   }
+
+  ///verify email subtitle
+  static TextStyle verifyEmailSubTitleStyle(
+      BuildContext context, {
+        double mobile = AppSizes.md,
+        double tablet = AppSizes.lg,
+        double desktop = AppSizes.lg,
+        Color?color
+      }) {
+    double width = MediaQuery.of(context).size.width;
+    Color textColor = color ?? getTextColor(context);
+    DeviceType deviceType = ScreenSize.getDeviceType(
+      width,
+    ); // device type নির্ধারণ করি
+
+    switch (deviceType) {
+      case DeviceType.mobile:
+        return TextStyle(
+          fontSize: mobile,
+          fontWeight: FontWeight.w400,
+          color: textColor,
+        );
+      case DeviceType.tablet:
+        return TextStyle(
+          fontSize: tablet,
+          fontWeight: FontWeight.w400,
+          color: textColor,
+        );
+      case DeviceType.desktop:
+        return TextStyle(
+          fontSize: desktop,
+          fontWeight: FontWeight.w400,
+          color: textColor,
+        );
+    }
+  }
+
+
   ///sign up title
-
-
   static TextStyle signUpTitleStyle(
       BuildContext context, {
         double mobile = AppSizes.lg,
@@ -178,6 +214,7 @@ class AppTextStyles {
     }
   }
 
+/*
 ///verify email title
   static TextStyle verifyEmailTitleStyle(
       BuildContext context, {
@@ -214,41 +251,6 @@ class AppTextStyles {
     }
   }
 
-///verify email subtitle
-  static TextStyle verifyEmailSubTitleStyle(
-      BuildContext context, {
-        double mobile = AppSizes.md,
-        double tablet = AppSizes.lg,
-        double desktop = AppSizes.lg,
-        Color?color
-      }) {
-    double width = MediaQuery.of(context).size.width;
-    Color textColor = color ?? getTextColor(context);
-    DeviceType deviceType = ScreenSize.getDeviceType(
-      width,
-    ); // device type নির্ধারণ করি
-
-    switch (deviceType) {
-      case DeviceType.mobile:
-        return TextStyle(
-          fontSize: mobile,
-          fontWeight: FontWeight.w400,
-          color: textColor,
-        );
-      case DeviceType.tablet:
-        return TextStyle(
-          fontSize: tablet,
-          fontWeight: FontWeight.w400,
-          color: textColor,
-        );
-      case DeviceType.desktop:
-        return TextStyle(
-          fontSize: desktop,
-          fontWeight: FontWeight.w400,
-          color: textColor,
-        );
-    }
-  }
   ///forget pass title
   static TextStyle forgetPasswordTitleStyle(
       BuildContext context, {
@@ -317,4 +319,122 @@ class AppTextStyles {
         );
     }
   }
+*/
+
+
+
+
+  static  TextStyle buttonTextStyle = const TextStyle(
+      color: AppColors.white,
+      fontSize: 20,
+      fontWeight: FontWeight.w600
+  );
+  static  TextStyle forgetTextStyle = const TextStyle(
+      color: AppColors.tealColor,
+      fontSize: 25,
+      fontWeight: FontWeight.w400
+  );
+  static  TextStyle textFieldStyle = const TextStyle(
+      color: AppColors.tealColor,
+      fontSize: 18,
+      fontWeight: FontWeight.w400
+  );
+  static  TextStyle commonTextStyle = const TextStyle(
+      color: AppColors.tealColor,
+      fontSize: 20,
+      fontWeight: FontWeight.w600
+  );
+  static TextStyle  titleText = TextStyle(
+      color: AppColors.black,
+      fontSize: 20,
+      fontWeight: FontWeight.w600
+  );
+  static TextStyle  subtitleText = TextStyle(
+      color: AppColors.black,
+      fontSize: 14,
+      fontWeight: FontWeight.w300
+  );
+  static const TextStyle appbarText = TextStyle(
+      color: AppColors.white,
+      fontSize: 30,
+      fontWeight: FontWeight.w600
+  );
+  static TextStyle largeText = TextStyle(
+      color: AppColors.black,
+      fontSize: 22,
+      fontWeight: FontWeight.w600
+  );
+  static  TextStyle smallText = TextStyle(
+      color: AppColors.black,
+      fontSize: 14,
+      fontWeight: FontWeight.w600
+  );
+  static TextStyle classContainerText = TextStyle(
+      color: AppColors.black,
+      fontSize: 18,
+      fontWeight: FontWeight.w600
+  );
+  static TextStyle smallTextOne = TextStyle(
+      color: AppColors.black,
+      fontSize: 12,
+      fontWeight: FontWeight.w400
+  );
+
+  static TextStyle smallTextTwo = TextStyle(
+      color: AppColors.black,
+      fontSize: 12,
+      fontWeight: FontWeight.w400
+  );
+
+
+  ///head line
+  static TextStyle headlineStyle(
+      BuildContext context, {
+        double mobile = AppSizes.lg,
+        double tablet = AppSizes.xl,
+        double desktop = AppSizes.xl,
+      }) {
+    double width = MediaQuery.of(context).size.width; // screen width পাই
+    DeviceType deviceType = ScreenSize.getDeviceType(
+      width,
+    ); // device type নির্ধারণ করি
+
+    Color textColor = getTextColor(context);
+
+    switch (deviceType) {
+      case DeviceType.mobile:
+        return TextStyle(
+          fontSize: mobile,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+          overflow: TextOverflow.ellipsis
+        );
+      case DeviceType.tablet:
+        return TextStyle(
+          fontSize: tablet,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+            overflow: TextOverflow.ellipsis,
+
+        );
+      case DeviceType.desktop:
+        return TextStyle(
+          fontSize: desktop,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+            overflow: TextOverflow.ellipsis
+        );
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
 }

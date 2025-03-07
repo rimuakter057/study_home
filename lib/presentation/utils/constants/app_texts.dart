@@ -18,7 +18,7 @@ class AppTexts {
       "Form Our Doorstep to Yours - Swift,Secure,and Contactless Delivery!";
 
 // --Home
-  static const String homeAppbarTitle = "Good day for shopping";
+  static const String homeAppbarTitle = "your learning platform";
   static const String homeAppbarSubTitle = "Rimu";
 
   // TextFormalised Form Text

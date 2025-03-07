@@ -17,8 +17,8 @@ class ForgetPassword extends StatelessWidget {
         padding:EdgeInsets.all(AppSizes.defaultSpace),
         child: Column(children: [
           /// heading
-          Text(AppTexts.forgetPasswordTitle,style: AppTextStyles.forgetPasswordTitleStyle(context),),
-          Text(AppTexts.forgetPasswordSubTitle,style: AppTextStyles.forgetPasswordSubTitleStyle(context),),
+          Text(AppTexts.forgetPasswordTitle,style: AppTextStyles.titleStyle(context),),
+          Text(AppTexts.forgetPasswordSubTitle,style: AppTextStyles.subTitleStyle(context),),
           SizedBox(height: AppSizes.spaceBtwSections*2,),
           /// text field
           TextFormField(

@@ -6,6 +6,7 @@ import 'package:study_home/common/styles/spacing_styles.dart';
 import 'package:study_home/common/sign_in_up/form_divider.dart';
 import 'package:study_home/common/sign_in_up/social_button.dart';
 import 'package:study_home/presentation/ui/screen/auth_screen/sign_up_screen/sign_up_screen.dart';
+import 'package:study_home/presentation/ui/screen/mobile_screen/main_nav_screen.dart';
 import 'package:study_home/presentation/utils/constants/app_texts.dart';
 import 'package:study_home/presentation/utils/constants/size/sizes.dart';
 import 'package:study_home/presentation/utils/helper/helper_function.dart';
@@ -26,7 +27,9 @@ class SignInScreen extends StatelessWidget {
                 SignInHeader(),
                 SignInForm(gap: gap),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.offAll(MainNavScreen());
+                  },
                   child: Text(AppTexts.signIn),
                 ),
                 gap,

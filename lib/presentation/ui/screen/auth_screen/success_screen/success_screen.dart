@@ -29,7 +29,7 @@ class SuccessScreen extends StatelessWidget {
               ///title and subtitle
               Text(
                 textAlign: TextAlign.center,
-                AppTexts.yourAccountCreatedTitle,style: AppTextStyles.verifyEmailTitleStyle(context),),
+                AppTexts.yourAccountCreatedTitle,style: AppTextStyles.titleStyle(context),),
               SizedBox(height: AppSizes.spaceBtwItems,),
               Text(
                 textAlign: TextAlign.center,

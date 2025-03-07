@@ -13,6 +13,10 @@ class AppSizes{
   static const double iconSm = 16.0;
   static const double iconMd = 24.0;
   static const double iconLg = 32.0;
+  static const double drawerIcon = 25;
+  static const double appBarShear = 30;
+  static const double appBarFavourite = 30;
+  static const double circleIcon=  30;
 
   // font sizes
   static const double fontSm = 12.0;

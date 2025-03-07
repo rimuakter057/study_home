@@ -13,12 +13,12 @@ class SignInHeader extends StatelessWidget {
       children: [
         Text(
           AppTexts.signInTitle,
-          style: AppTextStyles.signInTitleStyle(context),
+          style: AppTextStyles.titleStyle(context),
         ),
         Text(
           textAlign: TextAlign.center,
           AppTexts.signInSubTitle,
-          style: AppTextStyles.signInSubTitleStyle(context),
+          style: AppTextStyles.subTitleStyle(context),
         ),
       ],
     );

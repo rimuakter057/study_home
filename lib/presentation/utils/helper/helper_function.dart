@@ -49,7 +49,7 @@ class AppHelperFunction{
     );
   }
 
-  static void NavigateToScreen(BuildContext context,Widget screen){
+  static void navigateToScreen(BuildContext context,Widget screen){
     Navigator.push(context, MaterialPageRoute(builder: (_) => screen));
   }
 
@@ -61,8 +61,8 @@ class AppHelperFunction{
     }
   }
 
-  static bool isDarkMode(){
-    return Theme.of(Get.context!).brightness == Brightness.dark;
+  static bool isDarkMode(BuildContext context){
+    return Theme.of(context).brightness == Brightness.dark;
   }
   static bool isLightMode(){
     return Theme.of(Get.context!).brightness == Brightness.light;

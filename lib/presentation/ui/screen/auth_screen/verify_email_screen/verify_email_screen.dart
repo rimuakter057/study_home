@@ -37,7 +37,7 @@ class VerifyEmailScreen extends StatelessWidget {
               ///title and subtitle
               Text(
                   textAlign: TextAlign.center,
-                  AppTexts.confirmEmail,style: AppTextStyles.verifyEmailTitleStyle(context),),
+                  AppTexts.confirmEmail,style: AppTextStyles.titleStyle(context),),
               SizedBox(height: AppSizes.spaceBtwItems,),
               Text(
                 textAlign: TextAlign.center,
