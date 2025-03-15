@@ -5,7 +5,7 @@ import 'package:study_home/presentation/utils/helper/helper_function.dart';
 // Your color constants
 class MainNavScreen extends StatelessWidget {
   const MainNavScreen({super.key});
-
+static const routeName = "/main-nav-screen";
   @override
   Widget build(BuildContext context) {
 
