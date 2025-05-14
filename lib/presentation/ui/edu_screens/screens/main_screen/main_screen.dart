@@ -61,7 +61,7 @@ class _MainScreenState extends State<MainScreen> {
               gap,
 
               /// read doc container
-            //  _buildDocContainer(),
+              _buildDocContainer(),
 
               /// choose your option
               _buildOptionItem(gap, context),
@@ -162,20 +162,18 @@ class _MainScreenState extends State<MainScreen> {
   Row _buildDocContainer() {
     return Row(
       children: [
-        GestureDetector(
-          onTap: _launchFlutterDocs,
+        Expanded(
           child: DocContainer(
+            onTap: _launchFlutterDocs,
             imageUrl: AssetImagePath.flutterIcon,
             titleText: AppTextBn.flutter,
             subtitleText: AppTextBn.documentation,
           ),
         ),
         SizedBox(width: 8),
-        GestureDetector(
-          onTap :_launchDartDocs,
-
-
+        Expanded(
           child: DocContainer(
+            onTap:_launchDartDocs,
             imageUrl: AssetImagePath.dartIcon,
             titleText: AppTextBn.dart,
             subtitleText: AppTextBn.documentation,

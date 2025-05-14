@@ -1,16 +1,22 @@
-# study_home
+# Task Management App 📖
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## 🖼 App Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+### 🔹 Row 1
+<p float="left">
+  <img src="assets/screenshots/home.jpg" width="200"/>
+  <img src="assets/screenshots/curriculam.jpg" width="200"/>
+  <img src="assets/screenshots/class.jpg" width="200"/>
+  <img src="assets/screenshots/detail.jpg" width="200"/>
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🔹 Row 2
+<p float="left">
+  <img src="assets/screenshots/detail.jpg" width="200"/>
+  <img src="assets/screenshots/drawer.jpg" width="200"/>
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+

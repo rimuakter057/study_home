@@ -12,14 +12,17 @@ class DrawerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final item = drawerItems[index];
-    return CustomListTile(
-      leadingIcon: item['icon'],
-      title: item['text'],
-      leadingIconColor: item['color'],
-      onTap: () {
-        Navigator.pop(context);
-        NavigationUtils.onTapHandler(context, drawerItems[index]['text']);
-      },
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      child: CustomListTile(
+        leadingIcon: item['icon'],
+        title: item['text'],
+        leadingIconColor: item['color'],
+        onTap: () {
+          Navigator.pop(context);
+          NavigationUtils.onTapHandler(context, drawerItems[index]['text']);
+        },
+      ),
     );
   }
 }

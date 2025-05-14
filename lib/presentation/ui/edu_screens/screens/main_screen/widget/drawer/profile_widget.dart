@@ -26,27 +26,30 @@ class ProfileWidget extends StatelessWidget {
         Positioned(
           left: MediaQuery.sizeOf(context).width * 0.02,
           bottom: MediaQuery.sizeOf(context).height * 0.008,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CustomText(
-                text: 'Your Name',
-                textStyle: AppTextStyle.headerTextStyle(
-                  context,
-                  textColor: AppColor.white,
-                  textFontSize: MediaQuery.sizeOf(context).height * 0.025,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CustomText(
+                  text: 'Your Name',
+                  textStyle: AppTextStyle.headerTextStyle(
+                    context,
+                    textColor: AppColor.white,
+                    textFontSize: MediaQuery.sizeOf(context).height * 0.025,
+                  ),
                 ),
-              ),
-              CustomText(
-                text: 'example33@gmail.com',
-                textStyle: AppTextStyle.headerTextStyle(
-                  context,
-                  textColor: AppColor.grey,
-                  fontWeight: FontWeight.w400,
-                  textFontSize: MediaQuery.sizeOf(context).height * 0.02,
+                CustomText(
+                  text: 'example33@gmail.com',
+                  textStyle: AppTextStyle.headerTextStyle(
+                    context,
+                    textColor: AppColor.grey,
+                    fontWeight: FontWeight.w400,
+                    textFontSize: MediaQuery.sizeOf(context).height * 0.02,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ],

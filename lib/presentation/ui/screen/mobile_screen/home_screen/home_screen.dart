@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:study_home/common/widgets/containers/mb_home_search_container.dart';
-import 'package:study_home/common/widgets/text/section_headding.dart';
-import 'package:study_home/core/extention/localization_extention.dart';
 import 'package:study_home/presentation/ui/edu_screens/utils/asset_path.dart';
 import 'package:study_home/presentation/ui/screen/mobile_screen/home_screen/widget/appbar.dart';
 import 'package:study_home/presentation/ui/screen/mobile_screen/home_screen/widget/class_joining_card.dart';
@@ -51,6 +49,13 @@ class MobileHomeScreen extends StatelessWidget {
             ),
 
             ///body here
+            ClassCard(
+              title: 'class name',
+              instructor: 'Rimu',
+              date: '2-2-2023',
+              time: '1:07 pm',
+              isCompleted: false,
+            ),
             ClassCard(
               title: 'class name',
               instructor: 'Rimu',

@@ -22,34 +22,32 @@ class DocContainer extends StatelessWidget {
   final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: GestureDetector(
-        onTap: onTap,
-        child: CustomContainer(
-          borderWidth: 2,
-          height: AppSize.containerHeightLg(context),
-          borderColor: AppColor.gradientEndColor,
-          borderRadius: BorderRadius.circular(AppSize.borderRadiusSm(context)),
+    return GestureDetector(
+      onTap: onTap,
+      child: CustomContainer(
+        borderWidth: 2,
+        height: AppSize.containerHeightLg(context),
+        borderColor: AppColor.gradientEndColor,
+        borderRadius: BorderRadius.circular(AppSize.borderRadiusSm(context)),
 
-          child: Padding(
-            padding: EdgeInsets.all(AppSize.spaceBthItems(context)),
-            child: Column(
-              mainAxisAlignment:
-                  MainAxisAlignment.center, // Align all children in the center
-              crossAxisAlignment:
-                  CrossAxisAlignment.center, // Center children horizontally
-              children: [
-                Expanded(child: Image.asset(imageUrl, fit: BoxFit.contain)),
-                SizedBox(height: 10),
-                Expanded(child: CustomText(text: titleText)),
-                Expanded(
-                  child: CustomText(
-                    text: subtitleText,
-                    textStyle: AppTextStyle.secondaryTextStyle(context),
-                  ),
+        child: Padding(
+          padding: EdgeInsets.all(AppSize.spaceBthItems(context)),
+          child: Column(
+            mainAxisAlignment:
+                MainAxisAlignment.center, // Align all children in the center
+            crossAxisAlignment:
+                CrossAxisAlignment.center, // Center children horizontally
+            children: [
+              Expanded(child: Image.asset(imageUrl, fit: BoxFit.contain)),
+              SizedBox(height: 10),
+              Expanded(child: CustomText(text: titleText)),
+              Expanded(
+                child: CustomText(
+                  text: subtitleText,
+                  textStyle: AppTextStyle.secondaryTextStyle(context),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
