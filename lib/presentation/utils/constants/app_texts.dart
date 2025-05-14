@@ -65,7 +65,7 @@ class AppTexts {
   static const String yourAccountCreatedTitle =
       "Your account successfully created";
   static const String yourAccountCreatedSubTitle =
-      "Welcome to Your Ultimate Shopping Destination: Your Account is Created,Unleash";
+      "Welcome to Your study platform: Your Account is Created,Unleash";
   static const String newPasswordTile =
       "Remember to include a mix of uppercase letters, lowercase letters, numbers, and special characters for enhanced security!";
 }

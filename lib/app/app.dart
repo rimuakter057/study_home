@@ -31,7 +31,7 @@ class StudyHome extends StatelessWidget {
       theme: AppTheme.lightTheme,
       //darkTheme: AppTheme.darkTheme,
       //themeMode:ThemeMode.system ,
-      home: MainNavScreen(),
+      home: SignInScreen(),
     );
   }
 }
