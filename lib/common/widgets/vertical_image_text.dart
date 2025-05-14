@@ -23,7 +23,7 @@ class VerticalImageText extends StatelessWidget {
         padding: const EdgeInsets.only(right: AppSizes.spaceBtwItems),
         child: Column(
           children: [
-            ///circular icon
+                     ///circular icon
             Container(
               height: 56,
               width: 56,

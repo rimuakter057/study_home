@@ -21,28 +21,25 @@ class SearchContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = AppHelperFunction.isDarkMode(context);
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
-      child: Container(
-        width: AppDeviceUtils.getScreenWidth(context),
-        padding: EdgeInsets.all(AppSizes.md),
-        decoration: BoxDecoration(
-          color:
-          showBackground
-              ? dark
-              ? AppColors.dark
-              : AppColors.light
-              : Colors.transparent,
-          borderRadius: BorderRadius.circular(AppSizes.cardRadiusLg),
-          border: showBorder ? Border.all(color: AppColors.grey) : null,
-        ),
-        child: Row(
-          children: [
-            Icon(icon, color: AppColors.darkerGrey),
-            SizedBox(width: AppSizes.spaceBtwItems),
-            Text(text, style: Theme.of(context).textTheme.bodyMedium),
-          ],
-        ),
+    return Container(
+      width: AppDeviceUtils.getScreenWidth(context),
+      padding: EdgeInsets.all(AppSizes.md),
+      decoration: BoxDecoration(
+        color:
+        showBackground
+            ? dark
+            ? AppColors.dark
+            : AppColors.light
+            : Colors.transparent,
+        borderRadius: BorderRadius.circular(AppSizes.cardRadiusLg),
+        border: showBorder ? Border.all(color: AppColors.grey) : null,
+      ),
+      child: Row(
+        children: [
+          Icon(icon, color: AppColors.darkerGrey),
+          SizedBox(width: AppSizes.spaceBtwItems),
+          Text(text, style: Theme.of(context).textTheme.bodyMedium),
+        ],
       ),
     );
   }

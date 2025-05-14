@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:study_home/presentation/utils/constants/color.dart';
 import 'package:study_home/presentation/utils/helper/helper_function.dart';
+
+import '../../edu_screens/screens/home_screen/home_screen.dart';
+import '../../edu_screens/screens/main_screen/main_screen.dart';
+import 'home_screen/home_screen.dart';
 // Your color constants
 class MainNavScreen extends StatelessWidget {
   const MainNavScreen({super.key});
@@ -18,13 +22,13 @@ static const routeName = "/main-nav-screen";
             height: 80,
             elevation: 0,
             backgroundColor: dark?AppColors.black:AppColors.white,
-            indicatorColor: dark?AppColors.black.withAlpha(26):AppColors.white.withAlpha(26),
+            indicatorColor: dark?AppColors.black.withAlpha(26):AppColors.primaryColor,
             selectedIndex: controller.selectedIndex.value,
             onDestinationSelected: (index)=>controller.selectedIndex.value = index,
             destinations: [
               NavigationDestination(icon:Icon(Icons.home) , label: "home"),
-              NavigationDestination(icon:Icon(Icons.person) , label: "person"),
-              NavigationDestination(icon:Icon(Icons.home) , label: "home"),
+              NavigationDestination(icon:Icon(Icons.class_outlined) , label: "class"),
+              NavigationDestination(icon:Icon(Icons.book_online_outlined) , label: "curriculum"),
               NavigationDestination(icon:Icon(Icons.person) , label: "person"),],
           ),
         ),
@@ -34,12 +38,12 @@ static const routeName = "/main-nav-screen";
 }
 
 class NavigationController extends GetxController{
-  final RxInt selectedIndex=0.obs;
+  final RxInt selectedIndex=1.obs;
 
   final screen =[
-    Text("home"),
-    Text("person"),
-    Text("home"),
+    MainScreen(),
+    MobileHomeScreen(),
+    HomeScreen(),
     Text("person"),
   ];
 }  

@@ -14,17 +14,18 @@ class MbHomeAppbar extends StatelessWidget {
     return CustomAppBar(
       title: Column(
         children: [
-          Text(
-            AppTexts.homeAppbarTitle,
-            style: Theme.of(
-              context,
-            ).textTheme.labelMedium!.apply(color: AppColors.grey),
-          ),
+          SizedBox(height: 20,),
           Text(
             AppTexts.homeAppbarSubTitle,
             style: Theme.of(
               context,
             ).textTheme.headlineSmall!.apply(color: AppColors.white),
+          ),
+          Text(
+            AppTexts.homeAppbarTitle,
+            style: Theme.of(
+              context,
+            ).textTheme.labelMedium!.apply(color: AppColors.grey),
           ),
         ],
       ),
