@@ -14,7 +14,7 @@
 
 ### 🔹 Row 2
 <p float="left">
-  <img src="assets/screenshots/detail.jpg" width="200"/>
+  <img src="assets/screenshots/expantion_tail.jpg" width="200"/>
   <img src="assets/screenshots/drawer.jpg" width="200"/>
 </p>
 
